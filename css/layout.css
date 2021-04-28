@@ -1,0 +1,162 @@
+body,
+html {
+  margin: 0;
+  height: 100%;
+  background: #d3d3d3;
+  font-family: "Nunito", sans-serif;
+  background-image: url("https://images.unsplash.com/photo-1549924231-f129b911e442?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&dl=rich-smith-lVVs5skyWoo-unsplash.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow-x: hidden;
+}
+
+#headingGroup h1 {
+  font-weight: 100;
+  font-size: 4rem;
+  padding-top: 0.9rem;
+  letter-spacing: 7px;
+}
+
+#mainNav {
+  font-size: 1.5rem;
+  font-weight: 100;
+  position: fixed;
+}
+
+#mainNav .nav-link {
+  color: rgb(48, 40, 82);
+}
+
+#mainNav .nav-link:hover {
+  color: #33658a;
+}
+
+#mainNav .navbar-brand {
+  color: #cbd8e6;
+  font-size: 1.5rem;
+}
+
+#add {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-top: 10px;
+}
+
+#inputForm {
+  border: 2px solid black;
+  background-color: #768798;
+  color: rgb(48, 40, 82);
+}
+
+#inputTable {
+  border: 2px solid black;
+  background-color: #768798;
+  max-width: 750px;
+  vertical-align: middle;
+}
+
+#inputTable h3 {
+  border-bottom: 2px solid rgb(48, 40, 82);
+  margin-bottom: 0;
+}
+
+#myTable th td {
+  vertical-align: middle;
+}
+
+.edit {
+  color: rgb(48, 40, 82);
+}
+
+#update {
+  color: #33658a;
+  background-color: #cbd8e6;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+#head1 td {
+  font-size: 23px;
+  font-weight: 200;
+}
+
+.scrollable {
+  height: 300px;
+  overflow-y: auto;
+}
+
+.scrollableform {
+  height: 525px;
+  overflow-y: auto;
+}
+
+h6 {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  font-weight: 100;
+  font-size: 0.8rem;
+  color: black;
+}
+
+.error {
+  border: 2px solid red;
+}
+
+
+
+.modal-bg {
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  background-color:  rgb(48, 40, 82, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0s, opacity 0.5s;
+}
+
+.active {
+  visibility: visible;
+  opacity: 1;
+}
+
+.modal {
+  position: relative;
+  background-color: rgb(245, 245, 245, 1);
+  color: rgb(48, 40, 82);
+  width: 30%;
+  height: 30%;
+  border:4px solid rgb(129, 9, 9);
+  border-radius: 12%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+}
+
+.modal h3 {
+  text-align: center;
+  vertical-align: middle;
+  color: rgba(128, 9, 9, 0.651);
+  font-size: 25px;
+  font-style: italic;
+}
+
+.modal-close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-weight: bold;
+  cursor: pointer;
+}
